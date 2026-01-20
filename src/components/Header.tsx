@@ -3,8 +3,8 @@ import React from "react";
 const Header: React.FC = () => {
   const navLinks = [
    
-    { label: "About Us", path: "#" },
-    { label: "Our Brand Categories", path: "#" },
+    { label: "About Us", path: "/aboutus" },
+    { label: "Our Brand Categories", path: "/ourbrand" },
     { label: "Contact Us", path: "/contact-us"},
   ];
 
@@ -13,7 +13,7 @@ const Header: React.FC = () => {
       {/* Desktop Header */}
       <div className="hidden md:flex w-full px-8 py-4 items-center">
         {/* Logo */}
-        <a href="#" className="flex-shrink-0">
+        <a href="/dd" className="flex-shrink-0">
           <img
             src="/images/InimexLogo.svg"
             alt="Inimex Logo"
@@ -57,7 +57,7 @@ const Header: React.FC = () => {
         {/* Mobile menu button */}
         <div className="flex items-center space-x-2">
           <a
-            href="#"
+            href="/ss"
             className="bg-[#0f145b] text-white px-4 py-2 rounded-full hover:bg-[#0f145b] transition-colors duration-200"
           >
             Shop
