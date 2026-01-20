@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Inimex/static/css/main.61dabf61.css",
+    "main.js": "/Inimex/static/js/main.0ae45721.js",
+    "static/js/453.a8d619dc.chunk.js": "/Inimex/static/js/453.a8d619dc.chunk.js",
+    "index.html": "/Inimex/index.html",
+    "main.61dabf61.css.map": "/Inimex/static/css/main.61dabf61.css.map",
+    "main.0ae45721.js.map": "/Inimex/static/js/main.0ae45721.js.map",
+    "453.a8d619dc.chunk.js.map": "/Inimex/static/js/453.a8d619dc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.61dabf61.css",
+    "static/js/main.0ae45721.js"
+  ]
+}
