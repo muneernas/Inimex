@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router , Routes, Route } from "react-router-dom";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -7,7 +7,7 @@ import ContactUs from "./pages/ContactUs";
 
 const App: React.FC = () => {
     return (
-        <Router>
+        <Router basename="/Inimex">
             <Header />
 
             <main className="min-h-screen">

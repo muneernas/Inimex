@@ -1,11 +1,10 @@
 import React from "react";
-
 const Header: React.FC = () => {
   const navLinks = [
    
     { label: "About Us", path: "/aboutus" },
     { label: "Our Brand Categories", path: "/ourbrand" },
-    { label: "Contact Us", path: "/contact-us"},
+    { label: "Contact Us", path: "/Inimex/contact-us" },
   ];
 
   return (
@@ -15,7 +14,7 @@ const Header: React.FC = () => {
         {/* Logo */}
         <a href="/dd" className="flex-shrink-0">
           <img
-            src="/images/InimexLogo.svg"
+            src={`${process.env.PUBLIC_URL}/images/InimexLogo.svg`}
             alt="Inimex Logo"
             className="w-32 h-auto object-contain"
           />
