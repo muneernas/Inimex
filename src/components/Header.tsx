@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 const Header: React.FC = () => {
   const navLinks = [
    
@@ -6,10 +6,34 @@ const Header: React.FC = () => {
     { label: "Our Brand Categories", path: "/Inimex/our-brand" },
     { label: "Contact Us", path: "/Inimex/contact-us" },
   ];
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY < lastScrollY || currentScrollY < 10) {
+        // Scrolling up or at the top
+        setIsVisible(true);
+      } else if (currentScrollY > lastScrollY && currentScrollY > 80) {
+        // Scrolling down and past threshold
+        setIsVisible(false);
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollY]);
   return (
-    <header className="bg-gray-100 shadow sticky top-0 z-50">
-      {/* Desktop Header */}
+      <header className={`bg-gray-100 shadow sticky top-0 z-50 transition-transform duration-300 ${
+        isVisible ? "translate-y-0" : "-translate-y-full"
+      }`}>
       <div className="hidden md:flex w-full px-8 py-4 items-center">
         {/* Logo */}
         <a href="/dd" className="flex-shrink-0">
