@@ -2,8 +2,8 @@ import React from "react";
 const Header: React.FC = () => {
   const navLinks = [
    
-    { label: "About Us", path: "/aboutus" },
-    { label: "Our Brand Categories", path: "/ourbrand" },
+    { label: "About Us", path: "/Inimex/about-us" },
+    { label: "Our Brand Categories", path: "/Inimex/our-brand" },
     { label: "Contact Us", path: "/Inimex/contact-us" },
   ];
 
