@@ -10,7 +10,7 @@ const OurBrand: React.FC = () => {
         </h1>
 
         {/* 3 Column Grid with 1 Row Each */}
-        <div className="grid grid-cols-3 gap-6 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
           {/* Column 1 */}
           <div className="rounded-lg overflow-hidden shadow-md">
             <a href="#fmcg-section">
@@ -49,7 +49,7 @@ const OurBrand: React.FC = () => {
           <div className="rounded-lg overflow-hidden shadow-md">
             <a href="#horeca-section">
               <img
-                src={`${process.env.PUBLIC_URL}/images/horeca.svg`}
+                src={`${process.env.PUBLIC_URL}/images/horecamain.svg`}
                 alt="Brand"
                 className="w-full h-48 object-cover cursor-pointer"
               />
@@ -74,7 +74,7 @@ const OurBrand: React.FC = () => {
         </p>
 
         {/* 4 Column Grid for Images */}
-        <div className="grid grid-cols-4 gap-10 mb-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-6">
           <div className="rounded-lg overflow-hidden">
             <a
               href="https://inimexshop.com/en/collections/varta"
@@ -84,7 +84,7 @@ const OurBrand: React.FC = () => {
               <img
                 src={`${process.env.PUBLIC_URL}/images/varta.svg`}
                 alt="Varta Logo"
-                className="w-full h-40 object-contain hover:opacity-80 transition"
+                className="w-full h-28 object-contain hover:opacity-80 transition p-4"
               />
             </a>
           </div>
@@ -97,7 +97,7 @@ const OurBrand: React.FC = () => {
               <img
                 src={`${process.env.PUBLIC_URL}/images/glysolid.svg`}
                 alt="Agnesi Italian pasta brand logo established in 1824"
-                className="w-full h-40 object-contain hover:opacity-80 transition"
+                className="w-full h-28 object-contain hover:opacity-80 transition p-4"
               />
             </a>
           </div>
@@ -110,7 +110,7 @@ const OurBrand: React.FC = () => {
               <img
                 src={`${process.env.PUBLIC_URL}/images/bambo.svg`}
                 alt="Bambo copyright symbol nature logo"
-                className="w-full h-40 object-contain hover:opacity-80 transition"
+                className="w-full h-28 object-contain hover:opacity-80 transition p-4"
               />
             </a>
           </div>
@@ -123,46 +123,70 @@ const OurBrand: React.FC = () => {
               <img
                 src={`${process.env.PUBLIC_URL}/images/abena.svg`}
                 alt="A blue square with the text Abena inside and a copyright symbol."
-                className="w-full h-40 object-contain hover:opacity-80 transition"
+                className="w-full h-28 object-contain hover:opacity-80 transition p-4"
               />
             </a>
           </div>
         </div>
 
         {/* 4 Column Grid for Images */}
-        <div className="grid grid-cols-4 gap-10 mb-6">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 mb-6">
           <div className="rounded-lg overflow-hidden">
-            <img
-              src={`${process.env.PUBLIC_URL}/images/lion.svg`}
-              alt="Brand 5"
-              className="w-full h-40 object-contain"
-            />
+            <a
+              href="https://inimexshop.com/en/collections/zinc"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={`${process.env.PUBLIC_URL}/images/lion.svg`}
+                alt="Lion"
+                className="w-full h-28 object-contain hover:opacity-80 transition p-4"
+              />
+            </a>
           </div>
           <div className="rounded-lg overflow-hidden">
-            <img
-              src={`${process.env.PUBLIC_URL}/images/agnesi.svg`}
-              alt="Brand 6"
-              className="w-full h-40 object-contain"
-            />
+            <a
+              href="https://inimexshop.com/en/collections/pasta"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={`${process.env.PUBLIC_URL}/images/agnesi.svg`}
+                alt="Agnesi Italian pasta brand logo established in 1824"
+                className="w-full h-28 object-contain hover:opacity-80 transition p-4"
+              />
+            </a>
           </div>
           <div className="rounded-lg overflow-hidden">
-            <img
-              src={`${process.env.PUBLIC_URL}/images/kimberly.svg`}
-              alt="Brand 7"
-              className="w-full h-40 object-contain"
-            />
+            <a
+              href="https://inimexshop.com/en/collections/kleenex"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={`${process.env.PUBLIC_URL}/images/kimberly.svg`}
+                alt="Kimberly-Clark Professional"
+                className="w-full h-28 object-contain hover:opacity-80 transition p-4"
+              />
+            </a>
           </div>
           <div className="rounded-lg overflow-hidden">
-            <img
-              src={`${process.env.PUBLIC_URL}/images/bambo.svg`}
-              alt="Brand 8"
-              className="w-full h-40 object-contain"
-            />
+            <a
+              href="https://inimexshop.com/en/collections/parachute"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={`${process.env.PUBLIC_URL}/images/parachute.svg`}
+                alt="Parachute"
+                className="w-full h-28 object-contain hover:opacity-80 transition p-4"
+              />
+            </a>
           </div>
         </div>
 
         {/* 3 Column Grid for Images */}
-        <div className="grid grid-cols-4 gap-6 mb-16">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 mb-16">
           <div className="rounded-lg overflow-hidden">
             <a
               href="https://inimexshop.com/en/collections/ciptadent"
@@ -172,7 +196,7 @@ const OurBrand: React.FC = () => {
               <img
                 src={`${process.env.PUBLIC_URL}/images/ciptadent.svg`}
                 alt="Ciptadent logo"
-                className="w-full h-64 object-contain hover:opacity-80 transition"
+                className="w-full h-28 object-contain hover:opacity-80 transition p-4"
               />
             </a>
           </div>
@@ -185,7 +209,7 @@ const OurBrand: React.FC = () => {
               <img
                 src={`${process.env.PUBLIC_URL}/images/kodomo.svg`}
                 alt="KODOMO logo with animals on top"
-                className="w-full h-64 object-contain hover:opacity-80 transition"
+                className="w-full h-28 object-contain hover:opacity-80 transition p-4"
               />
             </a>
           </div>
@@ -204,27 +228,45 @@ const OurBrand: React.FC = () => {
         </p>
 
         {/* 3 Column Grid for Beauty Images */}
-        <div className="grid grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           <div className="rounded-lg overflow-hidden">
-            <img
-              src={`${process.env.PUBLIC_URL}/images/beauty1.svg`}
-              alt="Beauty Brand 1"
-              className="w-full h-40 object-contain"
-            />
+            <a
+              href="https://inimexshop.com/en/collections/misslyn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={`${process.env.PUBLIC_URL}/images/misslyn.svg`}
+                alt="Misslyn"
+                className="w-full h-28 object-contain hover:opacity-80 transition p-4"
+              />
+            </a>
           </div>
           <div className="rounded-lg overflow-hidden">
-            <img
-              src={`${process.env.PUBLIC_URL}/images/beauty2.svg`}
-              alt="Beauty Brand 2"
-              className="w-full h-40 object-contain"
-            />
+            <a
+              href="https://inimexshop.com/en/collections/make-up-factory"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={`${process.env.PUBLIC_URL}/images/makeup.svg`}
+                alt="Make-up Factory"
+                className="w-full h-40 sm:h-48 object-contain hover:opacity-80 transition p-6"
+              />
+            </a>
           </div>
           <div className="rounded-lg overflow-hidden">
-            <img
-              src={`${process.env.PUBLIC_URL}/images/beauty3.svg`}
-              alt="Beauty Brand 3"
-              className="w-full h-40 object-contain"
-            />
+            <a
+              href="https://inimexshop.com/en/collections/maluwilz"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={`${process.env.PUBLIC_URL}/images/maluwilz.svg`}
+                alt="Malu Wilz"
+                className="w-full h-28 object-contain hover:opacity-80 transition p-4"
+              />
+            </a>
           </div>
         </div>
 
@@ -239,13 +281,19 @@ const OurBrand: React.FC = () => {
         </p>
 
         {/* 1 Column for HORECA Image */}
-        <div className="grid grid-cols-1 gap-10 w-1/3">
+        <div className="grid grid-cols-1 gap-10 w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl mx-auto">
           <div className="rounded-lg overflow-hidden">
-            <img
-              src={`${process.env.PUBLIC_URL}/images/horeca1.svg`}
-              alt="HORECA Brand"
-              className="w-full h-40 object-contain"
-            />
+            <a
+              href="https://inimexshop.com/en/collections/kleenex"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={`${process.env.PUBLIC_URL}/images/horeca.svg`}
+                alt="HORECA Brand"
+                className="w-full h-40 object-contain hover:opacity-80 transition"
+              />
+            </a>
           </div>
         </div>
       </div>
