@@ -5,6 +5,9 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ContactUs from "./pages/ContactUs";
 import OurBrand from "./pages/OurBrand";
+import FMCG from "./pages/FMCG";
+import BeautyAndCosmetics from "./pages/BeautyAndCosmetics";
+import HORECA from "./pages/HORECA";
 import AboutUs from "./pages/aboutUs";
 
 const App: React.FC = () => {
@@ -18,6 +21,10 @@ const App: React.FC = () => {
           <Route path="/" element={<AboutUs />} />
 
           <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/fmcg" element={<FMCG />} />
+          <Route path="/beauty" element={<BeautyAndCosmetics />} />
+          <Route path="/BeautyAndCosmetics" element={<BeautyAndCosmetics />} />
+          <Route path="/horeca" element={<HORECA />} />
           <Route path="/our-brand" element={<OurBrand />} />
           <Route path="/contact-us" element={<ContactUs />} />
         </Routes>

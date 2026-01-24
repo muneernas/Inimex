@@ -47,8 +47,70 @@ const AboutUs: React.FC = () => {
         </div>
         {/* Carousel */}
         <Carousel />
+
+        {/* Brand Category Images (copied from OurBrand) */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10 mt-8">
+          {/* FMCG */}
+          <a
+            href="/Inimex/FMCG"
+            className="rounded-lg overflow-hidden shadow-md group"
+            style={{ textDecoration: "none" }}
+          >
+            <img
+              src={`${process.env.PUBLIC_URL}/images/fmcg.svg`}
+              alt="FMCG"
+              className="w-full h-48 object-cover cursor-pointer group-hover:opacity-90"
+            />
+            <h3 className="text-xl font-semibold text-[#0f145b] p-4 text-center cursor-pointer group-hover:underline">
+              FMCG
+            </h3>
+            <p className="text-gray-700 p-4 text-center">
+              A diverse portfolio of trusted international brands.
+            </p>
+          </a>
+          {/* Beauty & Cosmetics */}
+          <a
+            href="/Inimex/BeautyAndCosmetics"
+            className="rounded-lg overflow-hidden shadow-md group"
+            style={{ textDecoration: "none" }}
+          >
+            <img
+              src={`${process.env.PUBLIC_URL}/images/beauty.svg`}
+              alt="Beauty & Cosmetics"
+              className="w-full h-48 object-cover cursor-pointer group-hover:opacity-90"
+            />
+            <h3 className="text-xl font-semibold text-[#0f145b] p-4 text-center cursor-pointer group-hover:underline">
+              Beauty & Cosmetics
+            </h3>
+            <p className="text-gray-700 p-4 text-center">
+              Affordable and high-end makeup and skin care brands.
+            </p>
+          </a>
+          {/* Horeca */}
+          <a
+            href="/Inimex/Horeca"
+            className="rounded-lg overflow-hidden shadow-md group"
+            style={{ textDecoration: "none" }}
+          >
+            <img
+              src={`${process.env.PUBLIC_URL}/images/horecamain.svg`}
+              alt="Horeca"
+              className="w-full h-48 object-cover cursor-pointer group-hover:opacity-90"
+            />
+            <h3 className="text-xl font-semibold text-[#0f145b] p-4 text-center cursor-pointer group-hover:underline">
+              Horeca
+            </h3>
+            <p className="text-gray-700 p-4 text-center">
+              World Renowned brands that cater to the Professional sector needs.
+            </p>
+          </a>
+        </div>
+
         {/* About Us Section */}
-        <section className="bg-white rounded-3xl shadow-md p-4 sm:p-6 md:p-10 mt-8">
+        <section
+          id="about-us-section"
+          className="bg-white rounded-3xl shadow-md p-4 sm:p-6 md:p-10 mt-8"
+        >
           <h2 className="text-xl sm:text-2xl font-semibold text-[#0f145b] mb-4">
             About Us
           </h2>

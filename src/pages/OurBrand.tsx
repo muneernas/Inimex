@@ -8,7 +8,6 @@ const OurBrand: React.FC = () => {
         <h1 className="text-4xl font-sans text-[#0f145b] mb-12 text-center">
           Our Brand Categories
         </h1>
-
         {/* 3 Column Grid with 1 Row Each */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
           {/* Column 1 */}
@@ -63,18 +62,17 @@ const OurBrand: React.FC = () => {
           </div>
         </div>
 
-        {/* FMCG Section */}
+        {/* 3 Column Grid with 1 Row Each */}
+        {/* Removed brand category images as requested */}
+
+        {/* FMCG Section (from FMCG.tsx) */}
         <div id="fmcg-section" className="text-center mb-4">
           <h2 className="text-3xl font-sans text-[#0f145b]">FMCG</h2>
         </div>
-
-        {/* Description on left */}
-        <p className="text-lg text-[#0f145b] mb-12 pl-4">
+        <p className="text-lg text-[#0f145b] mb-12 text-center">
           A diverse portfolio of trusted international brands.
         </p>
-
-        {/* 4 Column Grid for Images */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
           <div className="rounded-lg overflow-hidden">
             <a
               href="https://inimexshop.com/en/collections/varta"
@@ -127,10 +125,6 @@ const OurBrand: React.FC = () => {
               />
             </a>
           </div>
-        </div>
-
-        {/* 4 Column Grid for Images */}
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 mb-6">
           <div className="rounded-lg overflow-hidden">
             <a
               href="https://inimexshop.com/en/collections/zinc"
@@ -183,10 +177,6 @@ const OurBrand: React.FC = () => {
               />
             </a>
           </div>
-        </div>
-
-        {/* 3 Column Grid for Images */}
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 mb-16">
           <div className="rounded-lg overflow-hidden">
             <a
               href="https://inimexshop.com/en/collections/ciptadent"

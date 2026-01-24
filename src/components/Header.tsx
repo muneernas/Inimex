@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from "react";
 const Header: React.FC = () => {
   const navLinks = [
-    { label: "About Us", path: "/Inimex/about-us" },
+    { label: "About Us", path: "/Inimex/about-us#about-us-section" },
+    { label: "FMCG", path: "/Inimex/FMCG" },
+    { label: "Beauty & Cosmetics", path: "/Inimex/BeautyAndCosmetics" },
+    { label: "Horeca", path: "/Inimex/Horeca" },
     { label: "Our Brand Categories", path: "/Inimex/our-brand" },
     { label: "Contact Us", path: "/Inimex/contact-us" },
   ];
