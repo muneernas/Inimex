@@ -1,9 +1,10 @@
 import React from "react";
 
 const carouselImages = [
-  `${process.env.PUBLIC_URL}/images/carousel1test.jpg`,
-  `${process.env.PUBLIC_URL}/images/carousel2test.jpg`,
-  `${process.env.PUBLIC_URL}/images/carousel3test.jpg`,
+  `${process.env.PUBLIC_URL}/images/vartabanner.jpeg`,
+  `${process.env.PUBLIC_URL}/images/misslynbanner.jpeg`,
+  `${process.env.PUBLIC_URL}/images/glysolidbanner.jpeg`,
+  `${process.env.PUBLIC_URL}/images/bamboobanner.jpeg`,
 ];
 
 function Carousel() {
@@ -15,13 +16,13 @@ function Carousel() {
     return () => clearInterval(timer);
   }, []);
   return (
-    <div className="relative w-full max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-md mb-10 bg-white">
+    <div className="relative w-full max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-md mb-16 bg-white">
       {carouselImages.map((src, idx) => (
         <img
           key={src}
           src={src}
           alt={`carousel-${idx}`}
-          className={`w-full h-48 sm:h-64 md:h-80 object-cover transition-opacity duration-700 ${idx === current ? "opacity-100" : "opacity-0 absolute top-0 left-0"}`}
+          className={`w-full h-48 sm:h-64 md:h-80 object-contain bg-gray-200 transition-opacity duration-700 ${idx === current ? "opacity-100" : "opacity-0 absolute top-0 left-0"}`}
         />
       ))}
       <div className="absolute bottom-2 sm:bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
@@ -49,7 +50,7 @@ const AboutUs: React.FC = () => {
         <Carousel />
 
         {/* Brand Category Images (copied from OurBrand) */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10 mt-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10 mt-32">
           {/* FMCG */}
           <a
             href="/Inimex/FMCG"

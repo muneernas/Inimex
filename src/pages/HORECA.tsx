@@ -18,7 +18,7 @@ const HORECA: React.FC = () => {
               rel="noopener noreferrer"
             >
               <img
-                src={`${process.env.PUBLIC_URL}/images/horeca.svg`}
+                src={`${process.env.PUBLIC_URL}/images/kimberly.svg`}
                 alt="HORECA Brand"
                 className="w-full h-40 object-contain hover:opacity-80 transition"
               />

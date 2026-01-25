@@ -5,7 +5,6 @@ const Header: React.FC = () => {
     { label: "FMCG", path: "/Inimex/FMCG" },
     { label: "Beauty & Cosmetics", path: "/Inimex/BeautyAndCosmetics" },
     { label: "Horeca", path: "/Inimex/Horeca" },
-    { label: "Our Brand Categories", path: "/Inimex/our-brand" },
     { label: "Contact Us", path: "/Inimex/contact-us" },
   ];
   const [isVisible, setIsVisible] = useState(true);
